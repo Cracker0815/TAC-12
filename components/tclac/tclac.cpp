@@ -138,8 +138,8 @@ void tclacClimate::readData() {
 
 		if ( dataRX[FAN_QUIET_POS] & FAN_QUIET) {
 			fan_mode = climate::CLIMATE_FAN_QUIET;
-		} else if (dataRX[MODE_POS] & FAN_Turbo){
-			fan_mode = climate::CLIMATE_FAN_Turbo;
+		} else if (dataRX[MODE_POS] & FAN_DIFFUSE){
+			fan_mode = climate::CLIMATE_FAN_DIFFUSE;
 		} else {
 			switch (fanspeedswitch) {
 				case FAN_AUTO:
@@ -348,7 +348,7 @@ void tclacClimate::takeControl() {
 			dataTX[8]	+= 0b00000000;
 			dataTX[10]	+= 0b00000101;
 			break;
-		case climate::CLIMATE_FAN_Turbo:
+		case climate::CLIMATE_FAN_DIFFUSE:
 			dataTX[8]	+= 0b01000000;
 			dataTX[10]	+= 0b00000000;
 			break;

@@ -37,7 +37,7 @@ namespace tclac {
 #define FAN_MEDIUM		0b10100000	//	|||
 #define FAN_HIGH		0b11010000	//	||||
 #define FAN_FOCUS		0b10110000	//	|||||
-#define FAN_Turbo		0b10000000	//	POWER [7]
+#define FAN_DIFFUSE		0b10000000	//	POWER [7]
 #define FAN_SPEED_MASK	0b11110000	//FAN SPEED MASK
 
 #define SWING_POS			10
