@@ -5,7 +5,7 @@
 # Компонент климата
 external_components:
   - source:
-      url: https://github.com/Cracker0815/tclac.git
+      url: https://github.com/Cracker0815/TAC-12
       type: git
       ref: master
     components: [ tclac ]
